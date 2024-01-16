@@ -3,7 +3,7 @@ import usersController from '../controllers/users.controller.js';
 
 const router = Router();
 
-router.get('/',usersController.getAllUsers);
+router.get('/v2',usersController.getAllUsers);
 
 router.get('/:uid',usersController.getUser);
 router.put('/:uid',usersController.updateUser);
